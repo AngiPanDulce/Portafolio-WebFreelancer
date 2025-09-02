@@ -17,15 +17,15 @@
 
     <nav class="nav">
         <div class="nav-links">
-            <a href="#">Inicio</a>
-            <a href="#"> Sobre mí</a>
-            <a href="#">Servicios </a>
-            <a href="#">proyectos</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#proyectos">Proyectos</a>
         </div>
-        <a class="contact-button" href="#">Contáctanos</a>
+        <a class="contact-button" href="#contacto">Contáctanos</a>
     </nav>
 
-    <header class="header">
+    <header class="header" id="inicio">
         <div class="text-content">
             <h2>Desarrollo web<span>Front end</span></h2>
             
@@ -37,6 +37,7 @@
     </header>
 
     <main>
+        
         <div class="title">
             <span>observa </span>
              <p  class="subtitulo">
@@ -44,7 +45,7 @@
         </div>
        
 
-        <div class="project-gallery">
+        <div class="project-gallery" id="servicios">
             <article>
                 <img class="icon-gallery" src="/Asset/Img/tv.svg" alt="Descripción del proyecto 1">
                 <p>Sitios a medida con diseño UI/UX profesional, completamente responsivos.</p>
@@ -63,7 +64,9 @@
             </article>
         </div>
 
-        <section class="">
+        
+
+        <section class="" id="sobre-mi">
 
             <div class="container">
 
@@ -76,22 +79,22 @@
                             <p>ayuda</p>
                         </div>
 
-                        <div>
-                            <img class="icon-user1" src="/Asset/Img/usuario.png" alt="usuario">
+                        <div class="icon-user1">
+                            <img src="/Asset/Img/usuario.png" alt="usuario">
                         </div>
 
-                        <div class="chat-ayuda1">
-                            <p>Hola, soy Angi👩‍💻 <br> Desarrolladora frontend con enfoque en negocios reales y
+                        <div class="chat-ayuda">
+                            <p class="chat-tag">Hola, soy Angi👩‍💻 <br> Desarrolladora frontend con enfoque en negocios reales y
                                 resultados
                                 visibles.</p>
                         </div>
 
-                        <div class="icon-user">
-                            <img class="icon-user2" src="/Asset/Img/usuario.png" alt="usuario">
+                        <div class="icon-user2">
+                            <img src="/Asset/Img/usuario.png" alt="usuario">
                         </div>
 
                         <div class="chat-ayuda2">
-                            <p>¿Necesitas una página web que se vea profesional, cargue rápido y conecte con tus
+                            <p class="chat-tag2">¿Necesitas una página web que se vea profesional, cargue rápido y conecte con tus
                                 clientes?
                                 Aquí la tienes.</p>
                         </div>
@@ -104,12 +107,12 @@
                             <div class="barra">|</div>
 
                             <div>
-                                <img src="/Asset/Img/whatsapp.svg" alt="WhatsApp" class="icon-whatsapp">
+                                <img src="/Asset/Img/Enviar.svg" alt="WhatsApp" class="icon-whatsapp">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="image-container">
+                <div class="image-container-chat">
                     <img class="pc" src="/Asset/Img/Person-img.png" alt="Descripción de la imagen para PC">
                 </div>
             </div>
@@ -123,7 +126,7 @@
 
        
 
-        <div class="slider-margin">
+        <div class="slider-margin" id="proyectos">
 
             <div class="slider-divicion">
 
@@ -280,34 +283,23 @@
 
         </div>
 
-        <div class="form-container">
+        <div class="container-form" id="contacto">
             <form class="formulario">
                 
-                    <legend><span>Hablemos de tu web</span>Completa el formulario y te responderé rápido para darle
+                    <legend ><span>Hablemos de tu web</span>Completa el formulario y te responderé rápido para darle
                         forma a tu idea.</legend>
                     <div class="form-columna">
-                        <div class="form-columna1">
-                            <div><label>Tu nombre</label>
-                                <input type="text" placeholder="Tu Nombre">
-                            </div>
-                            <div>
-                                <label>telefono</label>
-                                <input type="tel" placeholder="telefono">
-                            </div>
-                            <div>
-                                <label>Nombre del negocio</label>
-                                <input type="text" placeholder="Nombre del negocio">
-                            </div>
+                        <div class="left-column">
+                       <input type="text" class="form-input" placeholder="Tu Nombre" required>
+                       <input type="tel" class="form-input" placeholder="teléfono">
+                       <input type="text" class="form-input" placeholder="Nombre del negocio">    
                         </div>
-                        <div class="form-columna1">
-                            <div><label>email</label>
-                                <input type="email" placeholder="Tu Email">
-                            </div>
-                            <div>
-                                <label>Cuentame de tu proyecto</label>
-                                <textarea class="tarea" placeholder="Cuentame de tu proyecto"></textarea>
-                            </div>
+
+                        <div class="right-column">
+                             <input type="email" class="form-input" placeholder="Tu Email" required>
+                             <textarea class="form-input form-textarea" placeholder="Cuéntame de tu proyecto"></textarea>       
                         </div>
+
                     </div>
                     <div class="button-container">
                         <a href="#" class="button-slider">Enviar ahora</a>
@@ -322,14 +314,14 @@
         <div class="container-footer">
             <div class="footer-content">
                 <div class="contact-info">
-                    <p>📩angi.frontend@gmail.com</p>
-                    <p>📍 Colombia</p>
-                    <p> 💬 Respuesta rápida vía WhatsApp</p>
+                    <p>angimojica093@gmail.com</p>
+                    <p>Colombia</p>
+                    <p>Disponible en WhatsApp</p>
                 </div>
                 <div class="redes">
-                    <img src="#" alt="Facebook">
-                    <img src="#" alt="Instagram">
-                    <img src="#" alt="LinkedIn">
+                    <img src="Asset/Img/icon-jam-icons-outline-logos-facebook.svg" alt="Facebook">
+                    <img src="Asset/Img/icon-jam-icons-outline-logos-instagram.svg" alt="Instagram">
+                    <img src="Asset/Img/icon-jam-icons-outline-logos-linkedin.svg" alt="LinkedIn">
                 </div>
             </div>
 
